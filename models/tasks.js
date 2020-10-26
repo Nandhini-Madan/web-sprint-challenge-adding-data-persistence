@@ -16,9 +16,17 @@ function findById(id){
             .first()
 }
 
+function findByProjectId(){
+    return db("tasks as t")
+            .innerJoin("project as p","p.id","t.project_id")
+            .select(["*"])
+
+}
+
 
 module.exports={
     find,
     insert,
-    findById
+    findById,
+    findByProjectId,
 }
