@@ -35,7 +35,7 @@ router.post("/tasks", async (req, res, next) => {
     }
 })
 
-router.get("/tasks1", async (req, res, next) => {
+router.get("/taskList", async (req, res, next) => {
     try {
         const tasks = await task.findByProjectId()
         res.json(tasks)

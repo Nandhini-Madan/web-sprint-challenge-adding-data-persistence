@@ -16,10 +16,12 @@ function findById(id){
             .first()
 }
 
-function findByProjectId(){
+function findByProjectId(id){
     return db("tasks as t")
             .innerJoin("project as p","p.id","t.project_id")
-            .select(["*"])
+            .select(["p.id as projectId","p.name as projectName","p.description as projectDescription","t.notes"])
+            
+
 
 }
 
