@@ -49,8 +49,10 @@ Be prepared to demonstrate your understanding of this week's concepts by answeri
 1. Explain the difference between `Relational Databases` and `SQL`.
 
 2. Why do tables need a `primary key`?
+A primary key is a field in a table which uniquely identifies each row/record in a database table.
 
 3. What is the name given to a table column that references the primary key on another table.
+foreign key
 
 4. What do we need in order to have a _many to many_ relationship between two tables.
 
